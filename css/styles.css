@@ -450,7 +450,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 360px) {
-  .little-cards { gap: 12px 8px; padding: 0; }
+  .little-cards { gap: 12px 2px; padding: 0; }
   .little-card.photo-card { padding: 6px 6px 8px; }
   .little-card.photo-card img { height: 130px; }
   .little-card.photo-card figcaption { font-size: 12px; }
