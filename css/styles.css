@@ -245,9 +245,30 @@ figure, .little-card, .photo-card { margin: 0; }
 .page-ending .site-page { background:radial-gradient(ellipse at 50% 45%,#76232b 0%,#5b1119 68%,#4a0d14 100%); color:#f7e9dc; }
 .page-ending .paper-texture { opacity:.10; }
 .ending-layout { width:min(1200px,100%); min-height:min(65vh,650px); display:grid; place-items:center; text-align:center; position:relative; overflow:hidden; padding:35px 18px; }
-.ending-title { position:relative; z-index:2; width:100%; }
-.ending-title .birthday { font:clamp(42px,7vw,86px)/.95 var(--display); letter-spacing:-.055em; margin:0; white-space:nowrap; }
-.ending-title h1 { font:clamp(100px,17vw,205px)/.75 var(--script); font-weight:400; margin:0; word-break:break-word; }
+.ending-title { 
+  position: relative; 
+  z-index: 2; 
+  width: 100%; 
+}
+
+.ending-title .birthday { 
+  font: clamp(42px, 7vw, 86px)/.95 var(--display); 
+  letter-spacing: -.055em; 
+  margin: 0; 
+  white-space: nowrap; 
+}
+
+.ending-title h1 { 
+  font: clamp(52px, 9vw, 96px)/1 var(--script); 
+  font-weight: 400; 
+  margin: 0; 
+  white-space: nowrap; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+
 .ending-title small { display:block; margin-top:22px; font:italic 17px var(--display); }
 .ending-gingham { position:absolute; right:-1px; bottom:-1px; width:clamp(130px,22vw,260px); height:clamp(85px,14vw,150px); opacity:.9;
   background:repeating-conic-gradient(#f0dfd1 0 25%,#8c3438 0 50%) 0 0/24px 24px;
@@ -336,9 +357,13 @@ figure, .little-card, .photo-card { margin: 0; }
   .letter-modal-card p { font-size:17px; line-height:1.58; margin-bottom:15px; }
   .letter-modal-card .letter-salutation { font-size:31px; margin-bottom:19px; }
 
+  /* Ending responsive with single-line Huda ♡ */
   .ending-layout { min-height:62svh; padding:24px 12px; }
   .ending-title .birthday { font-size:clamp(35px,9vw,52px); white-space:normal; }
-  .ending-title h1 { font-size:clamp(88px,23vw,145px); }
+  .ending-title h1 { 
+    font-size: clamp(48px, 14vw, 72px); 
+    white-space: nowrap; 
+  }
   .ending-title small { font-size:14px; }
   .ending-gingham { width:clamp(90px, 20vw, 140px); height:clamp(60px, 14vw, 95px); }
   .page-arrow { width:40px; height:40px; font-size:20px; }
@@ -350,5 +375,8 @@ figure, .little-card, .photo-card { margin: 0; }
   .little-card.photo-card img { height: 130px; }
   .little-card.photo-card figcaption { font-size: 12px; }
   .ending-title .birthday { font-size:30px; }
-  .ending-title h1 { font-size:78px; }
+  .ending-title h1 { 
+    font-size: clamp(40px, 12.5vw, 48px); 
+    white-space: nowrap; 
+  }
 }
